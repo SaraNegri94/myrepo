@@ -142,8 +142,6 @@ filter(mpg, cyl == 8)
 filter(mpg, displ > 3)
 ```
 
-![Alt text](/Users/saranegri/images/ggplot.png)
-
 ## Google Colab
 
 1.  *What are the URLs of your Google Colab notebooks (both Python and
@@ -155,13 +153,17 @@ r:
 
 ## Tableau
 
+*Insert your the image of your final bar chart here*
+install.packages(“devtools”)
+devtools::install\_github(“boxuancui/DataExplorer”, ref= “develop”)
+
 ![Alt text](/Users/saranegri/images/Sales_in_the_East.png)
 
-1.  *What conclusions can you draw from the chart?* \# As we can see
-    from the chart, the Tables and Bookcase are the two cathegories
-    where the industry had less profits and/or has negative profits
-    during the period 2017 to 2020.The Tables has the most negative
-    profits than the other cathegories
+1.  *What conclusions can you draw from the chart?*
+
+From 2017 to 2020, the two categories, called bookcase and table,that
+are characterized by negative profits or few profits. The table is the
+least profitable category.
 
 ## Observable and Vega-Lite
 
@@ -170,48 +172,63 @@ r:
 1.  *In the “New York City weather forecast” section, try replacing
     `Forecast: detailedForecast` with `Forecast: shortForecast`. Then
     press the blue play button or use Shift-Return to run your change.
-    What happens?*
+    What happens?* ![Alt text](/Users/saranegri/images/Newyork.png)
+    \#there are less details about the weather
 
-![Alt text](/Users/saranegri/images/Newyork.png) \#a lot of details
-desappear
-
-1.  *Under the scatterplot of temperature vs. name, try replacing
+2.  *Under the scatterplot of temperature vs. name, try replacing
     `markCircle()` with `markSquare()`. Then press the blue play button
     or use Shift-Return to run your change. What happens? How about
     `markPoint()`?*
 
 ![Alt text](/Users/saranegri/images/scatterplot2.png)
 
-\#the markpoint change from a round shape to a square
+\#the markpoint changed from a cicle shape to a square one
 
 1.  *Under “Pick a location, see the weather forecast”, pick a location
     on the map. Where was the point you picked near?*
 
-2.  *The last visualization on this page is a “fancy” weather chart
+![Alt text](/Users/saranegri/images/map.png)
+
+\#I choose a point that was in Longitute:-81.2 and latitude: 27.34 and
+it was in Florida
+
+1.  *The last visualization on this page is a “fancy” weather chart
     embedded from another notebook. Click on the 3 dots next to that
     chart and choose ‘Download PNG’. Insert the PNG into your report.*
+    ![Alt text](/Users/saranegri/images/fancy.png)
 
 ### Charting with Vega-Lite
 
 `markCircle()`
 
-1.  *Pass an option of `{ size: 200 }` to `markCircle()`.*
-2.  *Try `markSquare` instead of `markCircle`.*
+1.  *Pass an option of `{ size: 200 }` to `markCircle()`.* ![Alt
+    text](/Users/saranegri/images/size200.png)
+
+2.  *Try `markSquare` instead of `markCircle`.* ![Alt
+    text](/Users/saranegri/images/square.png)
+
 3.  *Try `markPoint({ shape: 'diamond' })`.*
 
-`vl.x().fieldQ("Horsepower")`, …
+`vl.x().fieldQ("Horsepower")`, … ![Alt
+text](/Users/saranegri/images/diamond.png)
 
-1.  *Change `Horsepower` to `Acceleration`*
+1.  *Change `Horsepower` to `Acceleration`* ![Alt
+    text](/Users/saranegri/images/acceleration.png)
+
 2.  *Swap what fields are displayed on the x- and y-axis*
 
-`vl.tooltip().fieldN("Name")`
+![Alt text](/Users/saranegri/images/swap.png)
 
-1.  *Change `Name` to `Origin`.*
+`vl.tooltip().fieldN("Name")` 1. *Change `Name` to `Origin`.* ![Alt
+text](/Users/saranegri/images/origin.png)
 
 Another example, `count()`
 
-1.  *Remove the `vl.y().fieldN("Origin")` line.*
-2.  *Replace `count()` with `average("Miles_per_Gallon")`.*
+1.  *Remove the `vl.y().fieldN("Origin")` line.* ![Alt
+    text](/Users/saranegri/images/noorigin.png)
+
+2.  *Replace `count()` with `average("Miles_per_Gallon")`.* ![Alt
+    text](/Users/saranegri/images/average.png)
 
 ## References
 
@@ -219,6 +236,32 @@ Another example, `count()`
 completing the assignment. If you consulted a webpage, you must include
 the URL.*
 
-  - Insert Reference 1, <https://www.example.com>
-  - Insert Reference 2,
-    <https://www.example.com/reallyreallyreally-extra-long-URI/>
+\*Reference 1, <https://rpubs.com/RatherBit/90926>
+
+\*Reference 2,
+<https://www.google.com/amp/s/www.wikihow.com/Create-Bold-and-Italicized-Text-in-HTML%3famp=1>
+
+\*Reference 3, <https://www.w3schools.com/tags/tag_ul.asp>
+
+\*Reference 4,
+<https://r4ds.had.co.nz/data-visualisation.html#exercises>
+
+\*Reference 5, <https://r4ds.had.co.nz/workflow-basics.html#exercises-7>
+
+\*Reference 6, <https://r4ds.had.co.nz/data-visualisation.html>
+
+\*Reference 7,
+<https://www.earthdatascience.org/courses/earth-analytics/document-your-science/add-images-to-rmarkdown-report/>
+
+\*Reference 8,
+<https://observablehq.com/@observablehq/a-taste-of-observable>
+
+\*Reference 9, <https://observablehq.com/@observablehq/vega-lite>
+
+\*Reference 10,
+<https://help.tableau.com/current/guides/get-started-tutorial/en-us/get-started-tutorial-focus.htm>
+
+\*Reference 11,
+<https://observablehq.com/@observablehq/vega-lite-chart-types>
+
+\*Reference 12, <https://rpubs.com/RatherBit/90926>
